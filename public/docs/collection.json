@@ -1,0 +1,1784 @@
+{
+    "variable": [
+        {
+            "id": "baseUrl",
+            "key": "baseUrl",
+            "type": "string",
+            "name": "string",
+            "value": "http:\/\/127.0.0.1:8000"
+        }
+    ],
+    "info": {
+        "name": "Laravel",
+        "_postman_id": "4fa20f87-b9ab-4a27-b9de-41a46c70d134",
+        "description": "",
+        "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
+    },
+    "item": [
+        {
+            "name": "Endpoints",
+            "description": "",
+            "item": [
+                {
+                    "name": "POST api\/register",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/register",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/register"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"name\":\"umeigelvjyqwtvnfop\",\"email\":\"bogisich.samanta@example.com\",\"phone\":\"dmwbrdrgsgdvaud\",\"password\":\"sbFAWH<[h.t0\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "POST api\/login",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/login",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/login"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"email\":\"rhea.carroll@example.org\",\"password\":\"enim\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "POST api\/verify-otp",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/verify-otp",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/verify-otp"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"email\":\"mgoyette@example.net\",\"otp_code\":\"629520\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "POST api\/resend-otp",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/resend-otp",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/resend-otp"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"email\":\"kennedy28@example.org\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "POST api\/forgot-password",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/forgot-password",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/forgot-password"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "POST api\/reset-password",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/reset-password",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/reset-password"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"email\":\"nestor09@example.com\",\"otp_code\":\"712980\",\"password\":\"An@L>\\\"\\\\l%neo9{-HR\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "POST api\/payments\/callback",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/payments\/callback",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/payments\/callback"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Etalase Publik: Menampilkan semua fasilitas olahraga (dengan pagination)",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/facilities",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/facilities"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "59"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 200,
+                            "body": "{\"status\":\"success\",\"message\":\"Katalog fasilitas berhasil diambil.\",\"data\":[{\"id\":123,\"seller_id\":1,\"name\":\"baru\",\"slug\":\"baru-1780839215\",\"category\":\"futsal\",\"city\":\"jakarta\",\"address\":\"jl. anggrek no 198\",\"description\":\"krfniuefghedwyg67d3tdbeywfv\",\"price_per_hour\":170000,\"thumbnail_url\":\"http:\\\/\\\/127.0.0.1:8000\\\/storage\\\/facilities\\\/thumbnails\\\/HnybUcHVNcWweYE3lOPAMfB67G6ucmUodOZjiYsz.png\",\"status\":\"active\",\"latitude\":null,\"longitude\":null,\"gallery\":[],\"created_at\":\"2026-06-07T13:33:36.000000Z\",\"updated_at\":\"2026-06-07T13:33:36.000000Z\"},{\"id\":122,\"seller_id\":1,\"name\":\"baru\",\"slug\":\"baru-1780837207\",\"category\":\"futsal\",\"city\":\"jakarta\",\"address\":\"jl. anggrek no 198\",\"description\":\"krfniuefghedwyg67d3tdbeywfv\",\"price_per_hour\":170000,\"thumbnail_url\":\"http:\\\/\\\/127.0.0.1:8000\\\/storage\\\/facilities\\\/thumbnails\\\/HeQIstYfuZGPzWczixgJLFCl21ew06zzqSP4DUba.png\",\"status\":\"active\",\"latitude\":null,\"longitude\":null,\"gallery\":[],\"created_at\":\"2026-06-07T13:00:09.000000Z\",\"updated_at\":\"2026-06-07T13:00:09.000000Z\"},{\"id\":121,\"seller_id\":1,\"name\":\"Futsal Unesa\",\"slug\":\"futsal-unesa-1780444528\",\"category\":\"futsal\",\"city\":\"surabaya\",\"address\":\"jl.lidah wetan\",\"description\":\"bagus\",\"price_per_hour\":100000,\"thumbnail_url\":\"http:\\\/\\\/127.0.0.1:8000\\\/storage\\\/facilities\\\/thumbnails\\\/9hvZdNukRvylzuULu1wGc4NF5gwe3p49GN6ZA8tP.jpg\",\"status\":\"active\",\"latitude\":null,\"longitude\":null,\"gallery\":[\"http:\\\/\\\/127.0.0.1:8000\\\/storage\\\/facilities\\\/galleries\\\/UhUERJu3TYifMWJGQEHPkXf00ICowVd7zgtRO16Q.jpg\"],\"created_at\":\"2026-06-02T21:44:10.000000Z\",\"updated_at\":\"2026-06-03T00:13:14.000000Z\"},{\"id\":31,\"seller_id\":1,\"name\":\"Arena Futsal Premium 1 Jakarta\",\"slug\":\"arena-futsal-premium-1-jakarta\",\"category\":\"Futsal\",\"city\":\"Jakarta\",\"address\":\"Jl. Olahraga No. 44, Pusat Kota Jakarta, Indonesia\",\"description\":\"Fasilitas Futsal terbaik di kota Jakarta dengan standar internasional. Dilengkapi dengan ruang ganti yang nyaman, area parkir luas, dan pencahayaan optimal untuk permainan siang maupun malam hari. Cocok untuk latihan rutin maupun turnamen.\",\"price_per_hour\":190000,\"thumbnail_url\":\"http:\\\/\\\/127.0.0.1:8000\\\/storage\\\/https:\\\/\\\/images.unsplash.com\\\/photo-1534158914592-062992fbe900?q=80&w=800&auto=format&fit=crop\",\"status\":\"active\",\"latitude\":-1.150375,\"longitude\":114.081127,\"gallery\":[],\"created_at\":\"2026-06-02T21:35:45.000000Z\",\"updated_at\":\"2026-06-02T21:35:45.000000Z\"},{\"id\":32,\"seller_id\":1,\"name\":\"Arena Futsal Premium 2 Jakarta\",\"slug\":\"arena-futsal-premium-2-jakarta\",\"category\":\"Futsal\",\"city\":\"Jakarta\",\"address\":\"Jl. Olahraga No. 54, Pusat Kota Jakarta, Indonesia\",\"description\":\"Fasilitas Futsal terbaik di kota Jakarta dengan standar internasional. Dilengkapi dengan ruang ganti yang nyaman, area parkir luas, dan pencahayaan optimal untuk permainan siang maupun malam hari. Cocok untuk latihan rutin maupun turnamen.\",\"price_per_hour\":170000,\"thumbnail_url\":\"http:\\\/\\\/127.0.0.1:8000\\\/storage\\\/https:\\\/\\\/images.unsplash.com\\\/photo-1534158914592-062992fbe900?q=80&w=800&auto=format&fit=crop\",\"status\":\"active\",\"latitude\":-1.231575,\"longitude\":114.162427,\"gallery\":[],\"created_at\":\"2026-06-02T21:35:45.000000Z\",\"updated_at\":\"2026-06-02T21:35:45.000000Z\"},{\"id\":33,\"seller_id\":1,\"name\":\"Arena Basket Premium 1 Jakarta\",\"slug\":\"arena-basket-premium-1-jakarta\",\"category\":\"Basket\",\"city\":\"Jakarta\",\"address\":\"Jl. Olahraga No. 82, Pusat Kota Jakarta, Indonesia\",\"description\":\"Fasilitas Basket terbaik di kota Jakarta dengan standar internasional. Dilengkapi dengan ruang ganti yang nyaman, area parkir luas, dan pencahayaan optimal untuk permainan siang maupun malam hari. Cocok untuk latihan rutin maupun turnamen.\",\"price_per_hour\":190000,\"thumbnail_url\":\"http:\\\/\\\/127.0.0.1:8000\\\/storage\\\/https:\\\/\\\/images.unsplash.com\\\/photo-1505666287802-931dc83948e9?q=80&w=800&auto=format&fit=crop\",\"status\":\"active\",\"latitude\":-0.391175,\"longitude\":114.079827,\"gallery\":[],\"created_at\":\"2026-06-02T21:35:45.000000Z\",\"updated_at\":\"2026-06-02T21:35:45.000000Z\"},{\"id\":34,\"seller_id\":1,\"name\":\"Arena Tenis Premium 1 Jakarta\",\"slug\":\"arena-tenis-premium-1-jakarta\",\"category\":\"Tenis\",\"city\":\"Jakarta\",\"address\":\"Jl. Olahraga No. 11, Pusat Kota Jakarta, Indonesia\",\"description\":\"Fasilitas Tenis terbaik di kota Jakarta dengan standar internasional. Dilengkapi dengan ruang ganti yang nyaman, area parkir luas, dan pencahayaan optimal untuk permainan siang maupun malam hari. Cocok untuk latihan rutin maupun turnamen.\",\"price_per_hour\":200000,\"thumbnail_url\":\"http:\\\/\\\/127.0.0.1:8000\\\/storage\\\/https:\\\/\\\/images.unsplash.com\\\/photo-1595435934249-5df7ed86e1c0?q=80&w=800&auto=format&fit=crop\",\"status\":\"active\",\"latitude\":-0.481175,\"longitude\":114.263727,\"gallery\":[],\"created_at\":\"2026-06-02T21:35:45.000000Z\",\"updated_at\":\"2026-06-02T21:35:45.000000Z\"},{\"id\":35,\"seller_id\":1,\"name\":\"Arena Badminton Premium 1 Jakarta\",\"slug\":\"arena-badminton-premium-1-jakarta\",\"category\":\"Badminton\",\"city\":\"Jakarta\",\"address\":\"Jl. Olahraga No. 61, Pusat Kota Jakarta, Indonesia\",\"description\":\"Fasilitas Badminton terbaik di kota Jakarta dengan standar internasional. Dilengkapi dengan ruang ganti yang nyaman, area parkir luas, dan pencahayaan optimal untuk permainan siang maupun malam hari. Cocok untuk latihan rutin maupun turnamen.\",\"price_per_hour\":70000,\"thumbnail_url\":\"http:\\\/\\\/127.0.0.1:8000\\\/storage\\\/https:\\\/\\\/images.unsplash.com\\\/photo-1599839619722-39751411ea63?q=80&w=800&auto=format&fit=crop\",\"status\":\"active\",\"latitude\":-0.405375,\"longitude\":113.910927,\"gallery\":[],\"created_at\":\"2026-06-02T21:35:45.000000Z\",\"updated_at\":\"2026-06-02T21:35:45.000000Z\"},{\"id\":36,\"seller_id\":1,\"name\":\"Arena Badminton Premium 2 Jakarta\",\"slug\":\"arena-badminton-premium-2-jakarta\",\"category\":\"Badminton\",\"city\":\"Jakarta\",\"address\":\"Jl. Olahraga No. 21, Pusat Kota Jakarta, Indonesia\",\"description\":\"Fasilitas Badminton terbaik di kota Jakarta dengan standar internasional. Dilengkapi dengan ruang ganti yang nyaman, area parkir luas, dan pencahayaan optimal untuk permainan siang maupun malam hari. Cocok untuk latihan rutin maupun turnamen.\",\"price_per_hour\":100000,\"thumbnail_url\":\"http:\\\/\\\/127.0.0.1:8000\\\/storage\\\/https:\\\/\\\/images.unsplash.com\\\/photo-1626224583764-f87db24ac4ea?q=80&w=800&auto=format&fit=crop\",\"status\":\"active\",\"latitude\":-1.231075,\"longitude\":114.142427,\"gallery\":[],\"created_at\":\"2026-06-02T21:35:45.000000Z\",\"updated_at\":\"2026-06-02T21:35:45.000000Z\"},{\"id\":38,\"seller_id\":1,\"name\":\"Arena Padel Premium 2 Jakarta\",\"slug\":\"arena-padel-premium-2-jakarta\",\"category\":\"Padel\",\"city\":\"Jakarta\",\"address\":\"Jl. Olahraga No. 72, Pusat Kota Jakarta, Indonesia\",\"description\":\"Fasilitas Padel terbaik di kota Jakarta dengan standar internasional. Dilengkapi dengan ruang ganti yang nyaman, area parkir luas, dan pencahayaan optimal untuk permainan siang maupun malam hari. Cocok untuk latihan rutin maupun turnamen.\",\"price_per_hour\":380000,\"thumbnail_url\":\"http:\\\/\\\/127.0.0.1:8000\\\/storage\\\/https:\\\/\\\/images.unsplash.com\\\/photo-1622228837330-90928929e009?q=80&w=800&auto=format&fit=crop\",\"status\":\"active\",\"latitude\":-0.661075,\"longitude\":114.335927,\"gallery\":[],\"created_at\":\"2026-06-02T21:35:45.000000Z\",\"updated_at\":\"2026-06-02T21:35:45.000000Z\"}],\"meta\":{\"current_page\":1,\"last_page\":13,\"per_page\":10,\"total\":122}}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Detail Publik: Menampilkan satu fasilitas beserta relasi yang dibutuhkan Buyer",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/facilities\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/facilities\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "1",
+                                    "description": "The ID of the facility."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "58"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 200,
+                            "body": "{\"status\":\"success\",\"message\":\"Detail fasilitas berhasil diambil.\",\"data\":{\"id\":1,\"seller_id\":1,\"name\":\"Gym Center Bandung\",\"slug\":\"gym-center-bandung-1780436145-1\",\"category\":\"gym\",\"city\":\"Bandung\",\"address\":\"Dk. Baya Kali Bungur No. 202, Bandung\",\"description\":\"Fasilitas olahraga gym berstandar tinggi yang berlokasi strategis di Bandung. Molestias minima assumenda odio hic nam consectetur quae. Quaerat sint aut facere iste dolor.\",\"price_per_hour\":340000,\"thumbnail_url\":\"http:\\\/\\\/127.0.0.1:8000\\\/storage\\\/https:\\\/\\\/picsum.photos\\\/seed\\\/arena1\\\/800\\\/600\",\"status\":\"active\",\"latitude\":0.351544,\"longitude\":120.361668,\"gallery\":[],\"created_at\":\"2026-05-31T21:35:45.000000Z\",\"updated_at\":\"2026-06-02T21:35:45.000000Z\"}}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Menampilkan daftar ulasan untuk satu fasilitas (Public API)",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/facilities\/:id\/reviews",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/facilities\/:id\/reviews",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "1",
+                                    "description": "The ID of the facility."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "57"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 200,
+                            "body": "{\"data\":[],\"links\":{\"first\":\"http:\\\/\\\/127.0.0.1:8000\\\/api\\\/facilities\\\/1\\\/reviews?page=1\",\"last\":\"http:\\\/\\\/127.0.0.1:8000\\\/api\\\/facilities\\\/1\\\/reviews?page=1\",\"prev\":null,\"next\":null},\"meta\":{\"current_page\":1,\"from\":null,\"last_page\":1,\"links\":[{\"url\":null,\"label\":\"&laquo; Previous\",\"active\":false},{\"url\":\"http:\\\/\\\/127.0.0.1:8000\\\/api\\\/facilities\\\/1\\\/reviews?page=1\",\"label\":\"1\",\"active\":true},{\"url\":null,\"label\":\"Next &raquo;\",\"active\":false}],\"path\":\"http:\\\/\\\/127.0.0.1:8000\\\/api\\\/facilities\\\/1\\\/reviews\",\"per_page\":5,\"to\":null,\"total\":0}}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "GET api\/facilities\/{id}\/schedules",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/facilities\/:id\/schedules",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/facilities\/:id\/schedules",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "1",
+                                    "description": "The ID of the facility."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "56"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 200,
+                            "body": "{\"status\":\"success\",\"message\":\"Jadwal fasilitas berhasil diambil.\",\"data\":[]}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "GET \/api\/shops\nMengambil daftar semua toko",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/shops",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/shops"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "55"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 200,
+                            "body": "{\"data\":[{\"id\":1,\"seller_name\":\"Seller Juragan Arena\",\"shop_name\":\"Seller Juragan Arena\",\"shop_slug\":\"Seller Juragan Arena\",\"logo\":null,\"banner\":null,\"description\":null,\"city\":null,\"joined_at\":\"2026-06-07\",\"joined_at_human\":\"4 hours ago\"}],\"links\":{\"first\":\"http:\\\/\\\/127.0.0.1:8000\\\/api\\\/shops?page=1\",\"last\":\"http:\\\/\\\/127.0.0.1:8000\\\/api\\\/shops?page=1\",\"prev\":null,\"next\":null},\"meta\":{\"current_page\":1,\"from\":1,\"last_page\":1,\"links\":[{\"url\":null,\"label\":\"&laquo; Previous\",\"active\":false},{\"url\":\"http:\\\/\\\/127.0.0.1:8000\\\/api\\\/shops?page=1\",\"label\":\"1\",\"active\":true},{\"url\":null,\"label\":\"Next &raquo;\",\"active\":false}],\"path\":\"http:\\\/\\\/127.0.0.1:8000\\\/api\\\/shops\",\"per_page\":10,\"to\":1,\"total\":1}}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "GET \/api\/shops\/{slug}\nMengambil detail profil 1 toko beserta statistiknya (Rating, Total Fasilitas)",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/shops\/:slug",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/shops\/:slug",
+                            "variable": [
+                                {
+                                    "id": "slug",
+                                    "key": "slug",
+                                    "value": "est",
+                                    "description": "The slug of the shop."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "54"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 404,
+                            "body": "{\"status\":\"error\",\"message\":\"Toko tidak ditemukan.\"}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "GET \/api\/shops\/{slug}\/facilities\nMengambil katalog fasilitas milik 1 toko dengan fitur Filter (Search & Sort)",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/shops\/:slug\/facilities",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/shops\/:slug\/facilities",
+                            "variable": [
+                                {
+                                    "id": "slug",
+                                    "key": "slug",
+                                    "value": "praesentium",
+                                    "description": "The slug of the shop."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "53"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 404,
+                            "body": "{\"status\":\"error\",\"message\":\"Katalog toko tidak dapat dimuat.\"}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "POST api\/logout",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/logout",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/logout"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET api\/user",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/user",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/user"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "GET api\/bookings",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/bookings",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/bookings"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "POST api\/bookings",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/bookings",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/bookings"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"facility_id\":\"esse\",\"booking_date\":\"2076-02-11\",\"start_time\":\"22:37\",\"notes\":\"alkgyhinjrjommjzvui\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET api\/bookings\/{id}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/bookings\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/bookings\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "et",
+                                    "description": "The ID of the booking."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "DELETE api\/bookings\/{id}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/bookings\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/bookings\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "non",
+                                    "description": "The ID of the booking."
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET api\/my-payments",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/my-payments",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/my-payments"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "POST api\/payments\/create",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/payments\/create",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/payments\/create"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"booking_id\":\"deleniti\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET api\/payments\/{id}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/payments\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/payments\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "1",
+                                    "description": "The ID of the payment."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Menyimpan ulasan baru dari Mobile App (Protected API)",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/reviews",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/reviews"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "multipart\/form-data"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": [
+                                {
+                                    "key": "booking_id",
+                                    "value": "7",
+                                    "type": "text",
+                                    "description": "The <code>id<\/code> of an existing record in the bookings table."
+                                },
+                                {
+                                    "key": "rating",
+                                    "value": "3",
+                                    "type": "text",
+                                    "description": "Must be at least 1. Must not be greater than 5."
+                                },
+                                {
+                                    "key": "comment",
+                                    "value": "tjqsqiubkewefqhpoj",
+                                    "type": "text",
+                                    "description": "Must be at least 10 characters. Must not be greater than 1000 characters."
+                                },
+                                {
+                                    "key": "images[]",
+                                    "src": [],
+                                    "type": "file"
+                                }
+                            ]
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET api\/seller\/dashboard",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/seller\/dashboard",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/seller\/dashboard"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "GET api\/seller\/bookings",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/seller\/bookings",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/seller\/bookings"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "GET api\/seller\/bookings\/{id}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/seller\/bookings\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/seller\/bookings\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "non",
+                                    "description": "The ID of the booking."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "GET api\/seller\/facilities",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/seller\/facilities",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/seller\/facilities"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "POST api\/seller\/facilities",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/seller\/facilities",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/seller\/facilities"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "multipart\/form-data"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": [
+                                {
+                                    "key": "name",
+                                    "value": "nzfsgpamwzmmfcghwpoz",
+                                    "type": "text",
+                                    "description": "Must not be greater than 255 characters."
+                                },
+                                {
+                                    "key": "category",
+                                    "value": "hrpavudrwbvyarfmh",
+                                    "type": "text",
+                                    "description": "Must not be greater than 255 characters."
+                                },
+                                {
+                                    "key": "city",
+                                    "value": "woiczaolyexjyagqgvxissytg",
+                                    "type": "text",
+                                    "description": "Must not be greater than 255 characters."
+                                },
+                                {
+                                    "key": "address",
+                                    "value": "sint",
+                                    "type": "text",
+                                    "description": ""
+                                },
+                                {
+                                    "key": "description",
+                                    "value": "Tenetur architecto minus odio non vitae repellat et non.",
+                                    "type": "text",
+                                    "description": ""
+                                },
+                                {
+                                    "key": "price_per_hour",
+                                    "value": "89",
+                                    "type": "text",
+                                    "description": "Must be at least 0."
+                                },
+                                {
+                                    "key": "latitude",
+                                    "value": "8.3218",
+                                    "type": "text",
+                                    "description": ""
+                                },
+                                {
+                                    "key": "longitude",
+                                    "value": "2040055.7025",
+                                    "type": "text",
+                                    "description": ""
+                                },
+                                {
+                                    "key": "thumbnail",
+                                    "src": [],
+                                    "type": "file"
+                                },
+                                {
+                                    "key": "images[]",
+                                    "src": [],
+                                    "type": "file"
+                                }
+                            ]
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "PUT api\/seller\/facilities\/{id}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/seller\/facilities\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/seller\/facilities\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "1",
+                                    "description": "The ID of the facility."
+                                }
+                            ]
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "multipart\/form-data"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": [
+                                {
+                                    "key": "name",
+                                    "value": "skszayaralbptmbokyd",
+                                    "type": "text",
+                                    "description": "Must not be greater than 255 characters."
+                                },
+                                {
+                                    "key": "category",
+                                    "value": "lmszzeiwkjseudayocfp",
+                                    "type": "text",
+                                    "description": "Must not be greater than 255 characters."
+                                },
+                                {
+                                    "key": "city",
+                                    "value": "hiisk",
+                                    "type": "text",
+                                    "description": "Must not be greater than 255 characters."
+                                },
+                                {
+                                    "key": "address",
+                                    "value": "dolores",
+                                    "type": "text",
+                                    "description": ""
+                                },
+                                {
+                                    "key": "description",
+                                    "value": "Dolorum perferendis dignissimos sit culpa unde.",
+                                    "type": "text",
+                                    "description": ""
+                                },
+                                {
+                                    "key": "price_per_hour",
+                                    "value": "5",
+                                    "type": "text",
+                                    "description": "Must be at least 0."
+                                },
+                                {
+                                    "key": "status",
+                                    "value": "active",
+                                    "type": "text",
+                                    "description": ""
+                                },
+                                {
+                                    "key": "latitude",
+                                    "value": "42.87",
+                                    "type": "text",
+                                    "description": ""
+                                },
+                                {
+                                    "key": "longitude",
+                                    "value": "987.209084",
+                                    "type": "text",
+                                    "description": ""
+                                },
+                                {
+                                    "key": "thumbnail",
+                                    "src": [],
+                                    "type": "file"
+                                },
+                                {
+                                    "key": "images[]",
+                                    "src": [],
+                                    "type": "file"
+                                },
+                                {
+                                    "key": "_method",
+                                    "value": "PUT",
+                                    "type": "text"
+                                }
+                            ]
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "DELETE api\/seller\/facilities\/{id}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/seller\/facilities\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/seller\/facilities\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "1",
+                                    "description": "The ID of the facility."
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET api\/seller\/schedules\/{facilityId}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/seller\/schedules\/:facilityId",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/seller\/schedules\/:facilityId",
+                            "variable": [
+                                {
+                                    "id": "facilityId",
+                                    "key": "facilityId",
+                                    "value": "1",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "POST api\/seller\/schedules",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/seller\/schedules",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/seller\/schedules"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"facility_id\":\"earum\",\"day_of_week\":2,\"open_time\":\"22:37\",\"close_time\":\"2088-02-29\",\"slot_duration\":45,\"is_active\":false}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "PUT api\/seller\/schedules\/{id}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/seller\/schedules\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/seller\/schedules\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "1",
+                                    "description": "The ID of the schedule."
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"day_of_week\":2,\"open_time\":\"22:37\",\"close_time\":\"2027-07-27\",\"slot_duration\":50,\"is_active\":false}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "DELETE api\/seller\/schedules\/{id}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/seller\/schedules\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/seller\/schedules\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "1",
+                                    "description": "The ID of the schedule."
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET api\/seller\/wallet",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/seller\/wallet",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/seller\/wallet"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "POST api\/seller\/wallet\/withdraw",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/seller\/wallet\/withdraw",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/seller\/wallet\/withdraw"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"amount\":47018,\"bank_name\":\"qk\",\"account_name\":\"hwaywnvwnihdghjvrpj\",\"account_number\":\"cczizfxpqbyr\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                }
+            ]
+        }
+    ],
+    "auth": {
+        "type": "noauth"
+    }
+}

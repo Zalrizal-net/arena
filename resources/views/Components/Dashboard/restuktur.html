@@ -1,0 +1,33 @@
+resources/views/
+├── components/
+│   ├── dashboard/
+│   │   ├── alert.blade.php
+│   │   ├── header.blade.php
+│   │   ├── navbar.blade.php
+│   │   └── sidebar.blade.php        <-- Hanya butuh 1 sidebar dinamis
+│   └── guest/
+│       ├── card-katalog.blade.php
+│       ├── footer.blade.php
+│       └── navbar.blade.php
+│
+├── layouts/
+│   ├── app.blade.php              <-- LAYOUT TUNGGAL untuk Admin/Seller/Buyer
+│   └── guest.blade.php            <-- Layout khusus pengunjung/login
+│
+└── livewire/
+    ├── admin/
+    │   └── dashboard.blade.php
+    ├── auth/
+    │   ├── login-form.blade.php
+    │   └── register-form.blade.php
+    ├── buyer/
+    │   ├── dashboard.blade.php
+    │   └── notification-list.blade.php
+    ├── public/
+    │   ├── facility-catalog.blade.php
+    │   ├── facility-detail.blade.php
+    │   └── landing-page.blade.php
+    └── seller/
+        ├── booking-checkout.blade.php
+        ├── booking-detail.blade.php
+        └── dashboard.blade.php
